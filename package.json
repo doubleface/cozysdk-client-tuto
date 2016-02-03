@@ -4,5 +4,10 @@
   "description": "An application to get you started with serverless web app development and Cozy.",
   "cozy-type": "static",
   "cozy-displayName": "Serverless app example",
-  "icon-path": "main_icon.png"
+  "icon-path": "main_icon.png",
+  "cozy-permissions": {
+    "Contact": {
+      "description": "To easily find your contact when talking about someone."
+    }
+  }
 }
