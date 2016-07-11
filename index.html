@@ -9,7 +9,7 @@
     <!-- ng-app initilizes the app the angularjs way -->
     <body ng-app="browserapp">
 
-        <!-- Calls the different view. The configuration is in app.module.js -->
+    	<!-- Calls the different view. The configuration is in app.module.js -->
         <div ng-view></div>
 
         <!-- This is the library needed to use angularjs -->
@@ -17,10 +17,11 @@
 
         <!-- This library ables us to use the $routeProvider in app.module.js -->
         <script type="text/javascript" src="vendor/angular-route.js"></script>
+        <script type="text/javascript" src="vendor/cozysdk-client.js"></script>
         <script type="text/javascript" src="app.module.js"></script>
         <script type="text/javascript" src="controllers/Home.Ctrl.js"></script>
+        <script type="text/javascript" src="interfaces/cozysdk.angular.js"></script>
 
     </body>
-    <!-- end of the app -->
-
+<!-- end of the app -->
 </html>

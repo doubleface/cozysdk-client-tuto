@@ -1,3 +1,10 @@
-<h1 style="text-align:center">Hello</h1>
+<h1 style="text-align:center">The Contact App <small>Cozy Cloud</small></h1>
 
-<p>Hello {contactCtrl.hello} !</p>
+<label>Search: <input type="text" ng-model="searchText"></label>
+
+<p ng-show="contactCtrl.error">{{contactCtrl.error}}</p>
+<ul>
+    <li ng-repeat="contact in contactCtrl.contacts | filter:searchText track by $index">
+        {contact.fn}
+    </li>
+</ul>
